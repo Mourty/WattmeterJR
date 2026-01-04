@@ -6099,6 +6099,12 @@
 		(uuid "cafcd7f2-ef1b-42a1-b7c1-894026341022")
 	)
 	(junction
+		(at 167.64 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdec81e9-b15f-4d5a-8fe7-e1eab8b8d0df")
+	)
+	(junction
 		(at 85.09 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6550,7 +6556,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 147.32) (xy 167.64 115.57)
+			(xy 167.64 147.32) (xy 167.64 140.97)
 		)
 		(stroke
 			(width 0)
@@ -6867,6 +6873,16 @@
 			(type default)
 		)
 		(uuid "395633eb-bf35-45e6-abba-684d731393a1")
+	)
+	(wire
+		(pts
+			(xy 167.64 140.97) (xy 167.64 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39d4b1c9-2991-482e-a5b1-733c71b9008d")
 	)
 	(wire
 		(pts
@@ -7607,6 +7623,16 @@
 			(type default)
 		)
 		(uuid "77185439-5cf6-4dbb-a56c-1514af4f1f1c")
+	)
+	(wire
+		(pts
+			(xy 162.56 140.97) (xy 167.64 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77fa5bbb-5f5e-4c4e-829b-c4967cc723ff")
 	)
 	(wire
 		(pts
@@ -10135,7 +10161,7 @@
 			)
 		)
 		(property "Value" "GNDREF"
-			(at 179.578 146.812 90)
+			(at 181.102 145.288 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13792,6 +13818,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 162.56 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9dcdbce7-cc5a-44c8-aa18-4f86385e426a")
+		(property "Reference" "R19"
+			(at 161.798 149.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 161.544 141.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 163.576 145.034 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 162.56 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "022818f0-0ad2-42fd-b88a-6778b6adf526")
+		)
+		(pin "2"
+			(uuid "7408e053-3f45-42e1-a894-6666febeb17e")
+		)
+		(instances
+			(project "WattMeterJR"
+				(path "/a630c2f5-1474-4f68-8bdc-13f8f5fb42d0"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 173.99 35.56 180)
 		(unit 1)
@@ -14087,6 +14182,72 @@
 			(project "WattMeterJR"
 				(path "/a630c2f5-1474-4f68-8bdc-13f8f5fb42d0"
 					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 162.56 148.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7a4816e-deca-4b8a-b665-1ed1feae4e92")
+		(property "Reference" "#PWR020"
+			(at 162.56 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 164.338 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 162.56 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07d8d982-0e59-4ad3-a266-609a811a639c")
+		)
+		(instances
+			(project "WattMeterJR"
+				(path "/a630c2f5-1474-4f68-8bdc-13f8f5fb42d0"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
